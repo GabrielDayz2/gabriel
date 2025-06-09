@@ -10,25 +10,37 @@
     <script>
         var nome = ["Gabreil", "Natasha" ,"Jin"];
         var turma = ["1 ano", "2 ano", "3 ano"];
-        var 1tri = [70, 50 ,70];
-        var 2tri = [80, 50 ,60];
-        var 3tri = [80, 50, 70];
+        var tri1 = [70, 50 ,70];
+        var tri2 = [80, 50 ,60];
+        var tri3 = [80, 50, 70];
+
+        function selecionar(localizaLista){
+            nomeComparado = document.localizaLista.NOME.value;  
+            turmaComparado = document.localizaLista.TURMA.value 
+                let i = 0; 
+            document.write("<table border=1>"); 
+
+            document.write("</table>");
 
 
+
+        }
 
     </script>
 
+    <form NAME = "localizaLista">
     <table>
         <tr bgcolor=gray>
             <td width=40 align="center">Nome</td>
-            <td width=40 align="center"><INPUT NAME="Nome" VALUE=""></td>
+            <td width=40 align="center"><INPUT NAME="NOME" VALUE=""></td>
 
             <td width=40 align="center">Turma   </td>
-            <td width=40 align="center"><INPUT NAME="Turma" VALUE=""></td>
+            <td width=40 align="center"><INPUT NAME="TURMA" VALUE=""></td>
         </tr>
         <tr>
             <td width=80 align="center" colspan="4" bgcolor="gray">                                
-            <input type="button" NAME="botao" VALUE="Localizar" onClick="selecionar(localizaLista)">
+            <input type="button" NAME="botao" VALUE="Localizar" 
+                onClick="selecionar(localizaLista)">
 
         </td>
 
